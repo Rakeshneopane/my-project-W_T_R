@@ -1,0 +1,40 @@
+Explain the difference between npm and npx using the create-react-app code example.
+
+solution:
+    The difference between npm and npx lies in how they are used to execute or install packages, especially when working with JavaScript projects. Here’s a breakdown with a create-react-app example.
+
+        1. npm (Node Package Manager)
+            npm is a package manager for JavaScript, primarily used for installing, managing, and maintaining dependencies for your project. It can also be used to run scripts.
+
+            When you use npm, you typically install a package globally or locally.
+
+            Example: Installing create-react-app with npm
+            To create a React application using create-react-app with npm, you first install the create-react-app package globally or locally and then use it to set up your project.
+
+            Install create-react-app globally:
+
+            npm install -g create-react-app
+
+            This installs the create-react-app package globally on your system, so you can use the command anywhere.
+
+            Create the React app: After installation, you can create a React app by running:
+
+            create-react-app my-app
+            This will create a new React project in the my-app directory.
+
+
+        2. npx (Node Package Executor)
+            npx is a command-line tool that comes with npm (since npm 5.2) and is used to execute binaries from npm packages without needing to install them globally or even locally in your project. It allows you to run commands from packages that are not installed globally.
+
+            Example: Creating a React app with npx
+            With npx, you don't need to install create-react-app globally. It temporarily downloads and runs the package without saving it to your system.
+
+            Create the React app using npx:
+
+
+            npx create-react-app my-app
+
+            Here, npx will:
+            Download the latest version of the create-react-app package.
+            Run the command to create your project in the my-app directory.
+            You do not need to install create-react-app globally.

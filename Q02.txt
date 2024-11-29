@@ -1,0 +1,23 @@
+Explain the key differences and use cases between React's Client-Side Rendering (CSR) and Server-Side
+Rendering (SSR). Provide examples of scenarios where each approach is advantageous, and discuss the
+challenges associated with using React in both contexts.
+
+solution:
+
+    Key Differences Between CSR and SSR in React
+
+        Client-Side Rendering (CSR):
+
+        Rendering: Happens in the browser using JavaScript.
+        SEO: Can be problematic since content is dynamically rendered after the initial load.
+        Use Cases: SPAs, real-time apps, content-heavy sites with minimal SEO needs.
+        Advantages: Fast interactivity after initial load, reduced server load.
+        Challenges: Slower initial load, SEO limitations, and reliance on JavaScript.
+
+        Server-Side Rendering (SSR):
+
+        Rendering: Happens on the server; fully rendered HTML is sent to the client.
+        SEO: Good for SEO as content is fully rendered and ready for indexing.
+        Use Cases: SEO-sensitive sites, content-heavy sites, e-commerce, news sites.
+        Advantages: Faster initial load, better SEO, immediate content visibility.
+        Challenges: Increased server load, slower interactivity due to hydration, more complex setup.
